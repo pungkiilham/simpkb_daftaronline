@@ -7,7 +7,6 @@ import { useState, useCallback } from 'react'
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(false)
-  const [isCheckingStatus, setIsCheckingStatus] = useState(false)
 
   const handleRegistration = useCallback(() => {
     setIsLoading(true)
@@ -17,17 +16,6 @@ export default function Home() {
       console.error('Registration error:', error)
     } finally {
       setIsLoading(false)
-    }
-  }, [])
-
-  const handleCheckStatus = useCallback(() => {
-    setIsCheckingStatus(true)
-    try {
-      console.log('Checking status')
-    } catch (error) {
-      console.error('Status check error:', error)
-    } finally {
-      setIsCheckingStatus(false)
     }
   }, [])
 
