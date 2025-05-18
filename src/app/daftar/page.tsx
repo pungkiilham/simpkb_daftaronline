@@ -489,31 +489,6 @@ export default function DaftarPage() {
                     </Card>
                   ))}
                 </div>
-
-                {/* {selectedDate && (
-                  <div className="mt-4 p-3 bg-gray-50 rounded-lg">
-                    <div className="space-y-2">
-                      <Label htmlFor="waktu" className="text-sm font-medium">
-                        Pilih Waktu Pengujian
-                      </Label>
-                      <Select 
-                        required
-                        onValueChange={(value) => setSelectedSlot(value)}
-                      >
-                        <SelectTrigger className="bg-white">
-                          <SelectValue placeholder="Pilih waktu pengujian" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          {timeSlots.map((slot) => (
-                            <SelectItem key={slot.value} value={slot.value}>
-                              {slot.label}
-                            </SelectItem>
-                          ))}
-                        </SelectContent>
-                      </Select>
-                    </div>
-                  </div>
-                )} */}
               </div>
 
               <div className="space-y-2">
