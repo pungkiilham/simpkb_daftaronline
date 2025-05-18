@@ -49,6 +49,7 @@ export default function StatusPage() {
         return {
           ...baseInfo,
           message: `Selamat! Permohonan Anda telah diterima.`,
+          queueNumber,
           estimatedTime: `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`
         }
     }
