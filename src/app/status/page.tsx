@@ -43,13 +43,12 @@ export default function StatusPage() {
           reason: 'Dokumen persyaratan tidak lengkap/tidak sesuai.'
         }
       case 'diterima':
-        const queueNumber = `Q${Math.floor(Math.random() * 100).toString().padStart(3, '0')}`
+        const queueNumber = (Math.floor(Math.random() * 99) + 1).toString().padStart(2, '0')
         const hours = Math.floor(Math.random() * 3) + 8 // Random hour between 8-10
         const minutes = Math.floor(Math.random() * 60)
         return {
           ...baseInfo,
-          message: 'Selamat! Permohonan Anda telah diterima.',
-          queueNumber,
+          message: `Selamat! Permohonan Anda telah diterima.`,
           estimatedTime: `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}`
         }
     }
