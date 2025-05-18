@@ -27,7 +27,6 @@ export default function DaftarPage() {
   const [selectedLayanan, setSelectedLayanan] = useState("");
   const [showSuccessDialog, setShowSuccessDialog] = useState(false);
   const [selectedDate, setSelectedDate] = useState("");
-  const [selectedSlot, setSelectedSlot] = useState("");
   const router = useRouter();
 
   // Generate next 5 days dates with slot information
