@@ -58,15 +58,6 @@ export default function DaftarPage() {
     return dates;
   };
 
-  const timeSlots = [
-    { value: "08:00", label: "08:00 - 09:00 (5 slot tersedia)" },
-    { value: "09:00", label: "09:00 - 10:00 (5 slot tersedia)" },
-    { value: "10:00", label: "10:00 - 11:00 (5 slot tersedia)" },
-    { value: "11:00", label: "11:00 - 12:00 (5 slot tersedia)" },
-    { value: "13:00", label: "13:00 - 14:00 (5 slot tersedia)" },
-    { value: "14:00", label: "14:00 - 15:00 (5 slot tersedia)" },
-  ];
-
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
